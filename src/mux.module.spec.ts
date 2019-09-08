@@ -2,7 +2,7 @@
 import { Module } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import * as Mux from '@mux/mux-node';
-import { MUX_TOKEN } from './mux.constant';
+import { MUX_TOKEN } from './mux.constants';
 import { MuxModuleOptions, MuxOptionsFactory } from './interfaces';
 import MuxModule from './mux.module';
 
