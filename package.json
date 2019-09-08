@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Mux module for NestJS.",
   "main": "index.js",
-  "repository": "https://github.com/odeon-org/nestjs-mux",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/odeon-org/nestjs-mux.git"
+  },
   "author": "Odeon, Inc. (https://odeon.tv)",
   "scripts": {
     "build": "tsc",
