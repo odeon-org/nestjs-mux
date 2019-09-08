@@ -41,6 +41,9 @@
     "typescript": "^3.6.2",
     "yarnhook": "^0.4.2"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "engines": {
     "node": "^10.15.3",
     "yarn": "^1.16.0"
