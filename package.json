@@ -5,7 +5,14 @@
   "main": "index.js",
   "repository": "https://github.com/odeon-org/nestjs-mux",
   "author": "Odeon, Inc. (https://odeon.tv)",
-  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "lint": "eslint \"{src,test}/**/*.{ts,js}\" --fix",
+    "format": "prettier --write \"**/*.{ts,js,json,md,yml}\" --ignore-path .gitignore --write"
+  },
   "devDependencies": {
     "@mux/mux-node": "^2.4.0",
     "@nestjs/common": "^6.6.7",
@@ -24,5 +31,10 @@
     "ts-jest": "^24.0.2",
     "typescript": "^3.6.2",
     "yarnhook": "^0.4.2"
-  }
+  },
+  "engines": {
+    "node": "^10.15.3",
+    "yarn": "^1.16.0"
+  },
+  "license": "MIT"
 }
