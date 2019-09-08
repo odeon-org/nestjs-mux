@@ -5,5 +5,24 @@
   "main": "index.js",
   "repository": "https://github.com/odeon-org/nestjs-mux",
   "author": "Odeon, Inc. (https://odeon.tv)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@mux/mux-node": "^2.4.0",
+    "@nestjs/common": "^6.6.7",
+    "@nestjs/core": "^6.6.7",
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.5",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.6.2",
+    "yarnhook": "^0.4.2"
+  }
 }
