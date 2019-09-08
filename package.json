@@ -19,7 +19,7 @@
   "bugs": "https://github.com/odeon-org/nestjs-mux/issues",
   "author": "Odeon, Inc. (https://odeon.tv)",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
@@ -42,8 +42,9 @@
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.6.2",
-    "yarnhook": "^0.4.2"
+    "typescript": "^3.5.3",
+    "yarnhook": "^0.4.2",
+    "@nestjs/testing": "latest"
   },
   "engines": {
     "node": "^10.15.3",

@@ -7,8 +7,9 @@
     "declaration": true,
     "outDir": "dist/",
     "removeComments": true,
-    "target": "es6"
+    "target": "es6",
+    "incremental": true
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules/", "**/*.spec.ts", "**/*.mock.ts", "**/*.stub.ts"]
+  "exclude": ["node_modules/"]
 }
