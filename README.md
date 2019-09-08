@@ -53,10 +53,10 @@ import { ConfigService } from './config/config.service';
   imports: [
     MuxModule.forRootAsync({
       imports: [ConfigModule],
-      useFactory: (configService: ConfigService) => {
+      useFactory: (configService: ConfigService) => ({
         id: configService.getString('MUX_ID_TOKEN'),
         secret: configService.getString('MUX_SECRET_TOKEN'),
-      },
+      }),
       inject: [ConfigService],
     }),
   ],

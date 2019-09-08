@@ -2,9 +2,9 @@
 import { Module } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import * as Mux from '@mux/mux-node';
-import { muxToken } from 'mux.constants';
-import { MuxOptions, MuxOptionsFactory } from './interfaces';
-import { MuxModule } from './mux.module';
+import { MUX_TOKEN } from './mux.constant';
+import { MuxModuleOptions, MuxOptionsFactory } from './mux-options.interface';
+import MuxModule from './mux.module';
 
 describe('MuxModule', () => {
   describe('forRoot', () => {
@@ -18,14 +18,14 @@ describe('MuxModule', () => {
         ],
       }).compile();
 
-      const muxClient = module.get<Mux>(muxToken);
+      const muxClient = module.get(MUX_TOKEN);
       expect(muxClient).toBeInstanceOf(Mux);
     });
   });
 
   describe('forRootAsync', () => {
     class ConfigService implements MuxOptionsFactory {
-      createMuxOptions(): MuxOptions {
+      createMuxOptions(): Promise<MuxModuleOptions> | MuxModuleOptions {
         return {
           id: 'idToken',
           secret: 'secretToken',
@@ -46,7 +46,7 @@ describe('MuxModule', () => {
           ],
         }).compile();
 
-        const muxClient = module.get<Mux>(muxToken);
+        const muxClient = module.get(MUX_TOKEN);
         expect(muxClient).toBeInstanceOf(Mux);
       });
     });
@@ -65,7 +65,7 @@ describe('MuxModule', () => {
           ],
         }).compile();
 
-        const muxClient = module.get<Mux>(muxToken);
+        const muxClient = module.get(MUX_TOKEN);
         expect(muxClient).toBeInstanceOf(Mux);
       });
     });
@@ -80,7 +80,7 @@ describe('MuxModule', () => {
           ],
         }).compile();
 
-        const muxClient = module.get<Mux>(muxToken);
+        const muxClient = module.get(MUX_TOKEN);
         expect(muxClient).toBeInstanceOf(Mux);
       });
     });

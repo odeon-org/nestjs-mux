@@ -13,10 +13,7 @@ module.exports = {
     jest: true,
   },
   rules: {
-    'import/no-extraneous-dependencies': [
-      'error',
-      { devDependencies: ['**/*.spec.ts', '**/*.mock.ts', '**/*.stub.ts'] },
-    ],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': 'error',
   },
