@@ -24,7 +24,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "lint": "eslint \"{src,test}/**/*.{ts,js}\" --fix",
-    "format": "prettier --write \"**/*.{ts,js,json,md,yml}\" --ignore-path .gitignore --write"
+    "format": "prettier --write \"**/*.{ts,js,json,md,yml}\" --ignore-path .gitignore --write",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "@mux/mux-node": "^2.4.0",
