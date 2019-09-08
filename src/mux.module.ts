@@ -1,5 +1,5 @@
 import { DynamicModule, Module } from '@nestjs/common';
-import { MuxModuleAsyncOptions, MuxModuleOptions } from './mux-options.interface';
+import { MuxModuleAsyncOptions, MuxModuleOptions } from './interfaces';
 import MuxCoreModule from './mux-core.module';
 
 @Module({})

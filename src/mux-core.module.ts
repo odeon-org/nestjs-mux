@@ -1,10 +1,6 @@
 import * as Mux from '@mux/mux-node';
 import { DynamicModule, Global, Module, Provider, Type } from '@nestjs/common';
-import {
-  MuxModuleAsyncOptions,
-  MuxModuleOptions,
-  MuxOptionsFactory,
-} from './mux-options.interface';
+import { MuxModuleAsyncOptions, MuxModuleOptions, MuxOptionsFactory } from './interfaces';
 import { MUX_MODULE_OPTIONS, MUX_TOKEN } from './mux.constant';
 
 @Global()
