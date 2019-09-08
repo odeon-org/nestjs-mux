@@ -37,7 +37,7 @@ export default class MuxCoreModule {
       module: MuxCoreModule,
       imports: options.imports,
       providers: [...asyncProviders, muxProvider],
-      exports: [...asyncProviders],
+      exports: [...asyncProviders, muxProvider],
     };
   }
 
