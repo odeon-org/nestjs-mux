@@ -1,0 +1,9 @@
+{
+  "name": "nestjs-mux",
+  "version": "1.0.0",
+  "description": "Mux module for NestJS.",
+  "main": "index.js",
+  "repository": "https://github.com/odeon-org/nestjs-mux",
+  "author": "Odeon, Inc. (https://odeon.tv)",
+  "license": "MIT"
+}
