@@ -1,0 +1,11 @@
+# Node dependencies
+node_modules/
+
+# Log files
+*.log*
+
+# Compiled sources
+dist/
+
+# Code coverage output
+coverage/
