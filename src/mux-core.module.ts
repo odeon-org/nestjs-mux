@@ -66,7 +66,7 @@ export default class MuxCoreModule {
     const inject = [options.useClass || options.useExisting];
     return {
       provide: MUX_MODULE_OPTIONS,
-      useFactory: async (optionsFactory: MuxOptionsFactory): Mux => {
+      useFactory: async (optionsFactory: MuxOptionsFactory): Promise<MuxModuleOptions> => {
         return optionsFactory.createMuxOptions();
       },
       inject,
