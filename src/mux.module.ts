@@ -3,7 +3,7 @@ import { MuxModuleAsyncOptions, MuxModuleOptions } from './interfaces';
 import MuxCoreModule from './mux-core.module';
 
 @Module({})
-export default class MuxModule {
+export class MuxModule {
   static forRoot(options: MuxModuleOptions): DynamicModule {
     return {
       module: MuxModule,
